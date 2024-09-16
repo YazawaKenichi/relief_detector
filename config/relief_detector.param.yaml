@@ -1,0 +1,8 @@
+/**:
+  ros__parameters:
+    pub_rate: 1.0
+    Normalized_Publishser_Topic_Name: "/obstacle/bool"
+    ADC_Subscriber_Topic_Name: "/obstacle_detecting_bar/raw"
+    saving_raw_data_directory: "/home/yazawa/microros_ws/src/relief_detector/logs/raw"
+    saving_normalized_data_directory: "/home/yazawa/microros_ws/src/relief_detector/logs/normalized"
+
