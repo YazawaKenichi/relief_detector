@@ -8,7 +8,7 @@
 namespace ReliefDetectors
 {
 //! コンストラクタ
-ReliefDetector::ReliefDetector() : Node("relief_detector"), normalized_publisher_topic_("/relief_detector/bar/normalized"), adc_subscriber_topic_("/relief_detector/bar/raw"), saving_raw_data_path_("~/tmp/raw"), saving_normalized_data_path_("~/tmp/normalized"), raw_data_file_(saving_raw_data_path_), normalized_data_file_(saving_normalized_data_path_)
+ReliefDetector::ReliefDetector() : Node("relief_detector"), normalized_publisher_topic_("/relief_detector/bar/normalized"), adc_subscriber_topic_("/relief_detector/bar/raw"), saving_raw_data_path_("/dev/null"), saving_normalized_data_path_("/dev/null"), raw_data_file_(saving_raw_data_path_), normalized_data_file_(saving_normalized_data_path_)
 {
     //! 時刻取得クラスのインスタンス化
     this->tm_observer_ = TimeObserver::TimeObserver();
