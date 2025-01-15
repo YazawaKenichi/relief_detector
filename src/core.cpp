@@ -49,10 +49,10 @@ ReliefDetector::ReliefDetector() : Node("relief_detector"), normalized_publisher
 void ReliefDetector::adc_callback(const std_msgs::msg::Int32 & raw) const
 {
     //! パブリッシュ値の範囲
-    const int ref_max = 100;
+    const int ref_max = 256;
     const int ref_min = 0;
-    //! 以下の値はキャリブレーションして求めたい
-    const int calib_max = 1024;
+    //! raw データの範囲 キャリブレーションして求めるのが理想
+    const int calib_max = 4096;
     const int calib_min = 0;
 
     //! 変換後の値
